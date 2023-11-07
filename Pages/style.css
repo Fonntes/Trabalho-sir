@@ -1,0 +1,41 @@
+#title{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-family: Lato;
+    font-weight: 300;
+    letter-spacing: 10px;
+    margin-top: -60px;
+    padding-left: 10px
+}
+
+#background{
+    background-color: transparent;
+}
+
+#row{
+   
+}
+
+#head-buttons {
+    position: absolute;
+    color: white;
+}
+
+#title span {
+    font-size: 50px;
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#title .span2 {
+    font-size: 20px;
+    padding-left: 60px;
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
