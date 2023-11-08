@@ -1,4 +1,4 @@
-#title{
+#text{
     position: absolute;
     top: 50%;
     left: 0;
@@ -24,18 +24,36 @@
     color: white;
 }
 
-#title span {
-    font-size: 50px;
+#text span {
+    font-size: 20px;
     background: -webkit-linear-gradient(white, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-#title .span2 {
+#text .span2 {
     font-size: 20px;
     padding-left: 60px;
+
+}
+
+#text .topic{
+    font-size: 30px;
+    padding-left: 60px;
+}
+
+#text .content{
+    font-size: 20px;
+    padding-left: 60px;
+}
+
+.container{
     background: -webkit-linear-gradient(white, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+p{
+    font-size: 16px;
 }
 
