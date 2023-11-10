@@ -11,9 +11,13 @@
 .info{
     padding-top: 20%;
 }
+.info2{
+    padding-top: 20%;
+}
 
 .scrollable-div {
-    max-height: 800px; 
+    margin-top: -10%;
+    max-height: 1000px; 
     overflow-y: scroll;
 }
 
@@ -47,10 +51,12 @@
 }
 
 
+.footer{
+    background-color: red;
+}
 
-
-
-
-
+.icon{
+    margin-top: 10%;
+}
 
 
