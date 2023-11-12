@@ -65,9 +65,23 @@ li{
     background: -webkit-linear-gradient(white, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-left: 15%;
+    margin-top: 5%;
 }
 
-strong{
+p{
+    font-size: 20px;
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+h1{
+    font-size: 50px;
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-left: 10%;
     font-size: 100%;
 }
