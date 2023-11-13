@@ -1,147 +1,92 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UniTask</title>
-    
+
     <link rel="stylesheet" href="../Styles/index.css">
     <link rel="stylesheet" href="../Styles/background.css">
     <script defer src="script.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-
-  <body class ="bg-transparent">
-    <section>
-      <div class="p-3 mb-2 bg-transparent text-white">
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <ul class="nav nav-pills nav-fill">
-              <li class="nav-item">
-                <div class="nav-link">
-                  <a href="/Pages/login.html">
-                    <button type="button" class="shadow-lg btn btn-dark" >Login</button>
-                  </a>
-                </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <div class="nav-link">
-                  <button type="button" class="shadow-lg btn btn-dark" href="#">Register</button>
-                </div>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-      <section>
-          <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>   
-      </section>
-
-
-    <div class="scrollable-div">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<div class="scrollable-div">
+  <body class="bg-transparent">
+    <header>
       <section class="icon">
         <div class="row justify-content-around">
-          <div class="col-3">
-            <img class ="img-fluid" src="../Images/icon.png" class="rounded mx-auto d-block" alt="...">
-          </div>
+            <div class="col-3">
+                <img class="img-fluid" src="../Images/icon.png" class="rounded mx-auto d-block" alt="...">
+            </div>
         </div>
-      </section>
-
-      <section>
-        <div class="container">
-          <div blockquote class="blockquote text-center">
+    </section>
+      <div class="container">
+        <div blockquote class="blockquote text-center">
             <div id="title">
-              <span>UniTask</span>
-              <br>
-              <span class="span2">Navegue pelo Universo de Tarefas!</span> 
-              <p>UniTask é a sua solução perfeita para gerir as suas tarefas de forma completa e eficiente</p>
-          </div>     
-          </div>  
+                <span>UniTask</span>
+                <br>
+                <span class="span2">Navegue pelo Universo de Tarefas!</span>
+                <p>UniTask é a sua solução perfeita para gerir as suas tarefas de forma completa e
+                    eficiente</p>
+            </div>
         </div>
-      </section>
+      </div>
+        <section>
+            <div class="p-3 mb-2 bg-transparent text-white">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <ul class="nav nav-pills nav-fill">
+                            <li class="nav-item">
+                                <div class="nav-link">
+                                    <a href="/Pages/login.html">
+                                        <button type="button" class="shadow-lg btn btn-dark">Login</button>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="nav-link">
+                                    <button type="button" class="shadow-lg btn btn-dark" href="#">Register</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
 
-      <section class ="info info2">
-        <div class="row justify-content-around">
+    <section>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+        <section class="info info2">
+            <div class="row justify-content-around" style="height: 100vh; overflow-y: auto; background-color: white;">
                 <h1>Nossas Funcionalidades</h1>
                 <ul>
-                  <li>Crie uma conta personalizada, gerencie perfis e faça login de forma segura.</li>
-                  <li>Organize suas tarefas com categorização, priorização e calendarização </li>
-                  <li>Compartilhe suas tarefas com outros utilizadores</li>
-                  <li>Defina estados, destaque tarefas favoritas e simplifique a busca com filtros avançados.  </li>
-                  <li>Anexe documentos e ficheiros às suas tarefas</li>
+                    <li>Crie uma conta personalizada, gerencie perfis e faça login de forma segura.</li>
+                    <li>Organize suas tarefas com categorização, priorização e calendarização </li>
+                    <li>Compartilhe suas tarefas com outros utilizadores</li>
+                    <li>Defina estados, destaque tarefas favoritas e simplifique a busca com filtros avançados. </li>
+                    <li>Anexe documentos e ficheiros às suas tarefas</li>
                 </ul>
-          <div class="col-4"></div>
-          <div class="col-2">
-            <img class ="img-fluid" src="../Images_landingpage/criarperfil.jpg" class="rounded mx-auto d-block" alt="...">
-          </div>
-        </div>
-      </section>
+                <div class="col-4"></div>
+                <div class="col-2">
+                    <img class="img-fluid" src="../Images_landingpage/criartarefa.jpg"
+                        class="rounded mx-auto d-block" alt="...">
+                </div>
+        </section>
 
-      <section class ="info">
-        <div class="row justify-content-around">
-          <div class="col-2">
-            <img class ="img-fluid" src="../Images_landingpage/criartarefa.jpg" class="rounded mx-auto d-block" alt="...">
-          </div>
-          <div class="col-4"></div>
-        </div>
-      </section>
-      
-      <section class ="info">
-        <div class="row justify-content-around">
-          <div class="col-4">
-            <img class ="img-fluid" src="../Images_landingpage/categorias.jpg" class="rounded mx-auto d-block" alt="...">
-          </div>
-        </div>
-      </section>
-
-      <section class ="info">
-        <div class="row justify-content-around">
-          <div class="col-4"></div>
-        </div>
-      </section>
-
-      <section class ="info">
-        <div class="row justify-content-around">
-          <div class="col-4"></div>
-          <div class="col-4">
-            <img class ="img-fluid" src="../Images_landingpage/compartilhar.jpg" class="rounded mx-auto d-block" alt="...">
-          </div>
-        </div>
-      </section>
-
-      <section class ="info">
-        <div class="row justify-content-around">
-          <div class="col-2">
-            <img class ="img-fluid" src="../Images_landingpage/filtrar.jpg" class="rounded mx-auto d-block" alt="...">
-          </div>
-          <div class="col-4"></div>
-        </div>
-      </section>
-
-      <section class ="info">
-        <div class="row justify-content-around">
-          <div class="col-2">
-            <img class ="img-fluid" src="../Images_landingpage/anexar_documentos.jpg" class="rounded mx-auto d-block" alt="...">
-          </div>
-          <div class="col-4"></div>
-        </div>
-      </section>
-
-      <footer>
-        <div class="row justify-content-center">
-            <div class="footer"></div>
-        </div>
-          </section>
-      </footer>
+        <footer>
+            <div class="row justify-content-center">
+                <div class="footer"></div>
+            </div>
+        </footer>
     </div>
-  </body>
+</div>
+</body>
+
 </html>
