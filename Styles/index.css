@@ -33,7 +33,7 @@
 }
 
 #title .span2 {
-    font-size: 40px;
+    font-size: 30px;
     padding-left: 60px;
 
 }
@@ -61,20 +61,17 @@
 }
 
 
-li{
-    font-size: 20px;
-    background: -webkit-linear-gradient(white, #38495a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-left: 15%;
-    margin-top: 5%;
-}
-
 p{
     font-size: 20px;
-    background: -webkit-linear-gradient(white, #38495a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-left: 2%;
+    color: radial-gradient(ellipse at bottom, #1b2735, #090a0f 100%);
+    
+}
+
+svg{
+    margin-left: 15%;
+    width: 18px; 
+    height: 18px;
     
 }
 

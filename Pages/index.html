@@ -12,73 +12,120 @@
     <script defer src="script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-<div class="scrollable-div">
-  <body class="bg-transparent">
-    <header>
-      <section class="icon">
-        <div class="row justify-content-around">
-            <div class="col-3">
-                <img class="img-fluid" src="../Images/icon.png" class="rounded mx-auto d-block" alt="...">
-            </div>
-        </div>
-    </section>
-      <div class="container">
-        <div blockquote class="blockquote text-center">
-            <div id="title">
-                <span>UniTask</span>
-                <br>
-                <span class="span2">Navegue pelo Universo de Tarefas!</span>
-                <p>UniTask é a sua solução perfeita para gerir as suas tarefas de forma completa e
-                    eficiente</p>
-            </div>
-        </div>
-      </div>
-        <section>
-            <div class="p-3 mb-2 bg-transparent text-white">
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <ul class="nav nav-pills nav-fill">
-                            <li class="nav-item">
-                                <div class="nav-link">
-                                    <a href="/Pages/login.html">
-                                        <button type="button" class="shadow-lg btn btn-dark">Login</button>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="nav-link">
-                                    <button type="button" class="shadow-lg btn btn-dark" href="#">Register</button>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </header>
 
-    <section>
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-    </section>
+<body class="bg-transparent">
+    <div class="scrollable-div">
+        <header>
+            <section class="icon">
+                <div class="row justify-content-around">
+                    <div class="col-3">
+                        <img class="img-fluid" src="../Images/icon.png" class="rounded mx-auto d-block" alt="...">
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <div blockquote class="blockquote text-center">
+                    <div id="title">
+                        <span>UniTask</span>
+                        <br>
+                        <span class="span2">A sua solução perfeita para gerir as suas tarefas de forma completa e eficiente</span>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="p-3 mb-2 bg-transparent text-white">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <ul class="nav nav-pills nav-fill">
+                                <li class="nav-item">
+                                    <div class="nav-link">
+                                        <a href="/Pages/login.html">
+                                            <button type="button" class="shadow-lg btn btn-dark">Login</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="nav-link">
+                                        <button type="button" class="shadow-lg btn btn-dark" href="#">Register</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </header>
+
+        <section>
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </section>
         <section class="info info2">
             <div class="row justify-content-around" style="height: 100vh; overflow-y: auto; background-color: white;">
                 <h1>Nossas Funcionalidades</h1>
-                <ul>
-                    <li>Crie uma conta personalizada, gerencie perfis e faça login de forma segura.</li>
-                    <li>Organize suas tarefas com categorização, priorização e calendarização </li>
-                    <li>Compartilhe suas tarefas com outros utilizadores</li>
-                    <li>Defina estados, destaque tarefas favoritas e simplifique a busca com filtros avançados. </li>
-                    <li>Anexe documentos e ficheiros às suas tarefas</li>
-                </ul>
+                <div class="col-12">
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-person-fill" viewBox="0 0 18 18">
+                            <path
+                                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                        </svg>
+                        <p class="ml-2">Crie uma conta personalizada, gerencie perfis e faça login de forma segura.</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-calendar-check-fill" viewBox="0 0 18 18">
+                            <path
+                                d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                        </svg>
+                        <p class="ml-2">Organize suas tarefas com categorização, priorização e calendarização</p>
+                    </div>
+                </div>
+                <!-- Adicione ícones e parágrafos restantes conforme necessário -->
+                <div class="col-12">
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor"
+                            class="bi bi-share-fill" viewBox="0 0 18 18">
+                            <path
+                                d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                        </svg>
+                        <p class="ml-2">Compartilhe suas tarefas com outros utilizadores</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 18 18">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p class="ml-2">Defina estados, destaque tarefas favoritas e simplifique a busca com filtros
+                            avançados.</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-file-earmark-fill" viewBox="0 0 18 18">
+                            <path
+                                d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3z" />
+                        </svg>
+                        <p class="ml-2">Anexe documentos e ficheiros às suas tarefas</p>
+                    </div>
+                </div>
                 <div class="col-4"></div>
                 <div class="col-2">
                     <img class="img-fluid" src="../Images_landingpage/criartarefa.jpg"
                         class="rounded mx-auto d-block" alt="...">
                 </div>
+            </div>
         </section>
+        
 
         <footer>
             <div class="row justify-content-center">
@@ -86,7 +133,9 @@
             </div>
         </footer>
     </div>
-</div>
+    </div>
 </body>
 
 </html>
+
+
