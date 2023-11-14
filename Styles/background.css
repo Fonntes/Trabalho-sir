@@ -563,9 +563,9 @@ html {
 
 @keyframes animStar {
    from{
-        transform: translateY(0);
+        transform: translateY(1000);
    } 
    to {
-       transform: translateY(-2000px);
+       transform: translateY(-1000px);
    }
 }
