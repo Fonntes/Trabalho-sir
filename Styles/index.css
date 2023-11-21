@@ -71,7 +71,7 @@ h1{
 
 .hidden {
     height: 80vh;
-    transform: translateY(150px);
+    transform: translateY(10%);
     opacity: 0;
     transition: all 2s ease;
 }
