@@ -8,17 +8,8 @@
     padding-left: 10px
 }
 
-.info{
-    padding-top: 20%;
-}
-
-.info2{
-    padding-top: 20%;
-}
-
 .scrollable-div {
-    margin-top: -8%;
-    max-height: 1000px; 
+    height: 100vh; 
     overflow-y: scroll;
 }
 
@@ -57,36 +48,25 @@
     background-color: red;
 }
 
-.icon{
-    margin-top: 10%;
+.icon {
+    height: 100vh;
 }
 
 
 p{
-    font-size: 20px;
+    font-size: 100%;
     margin-left: 2%;
     color: radial-gradient(ellipse at bottom, #1b2735, #090a0f 100%);
     
 }
 
-svg{
-    margin-left: 15%;
-    width: 18px; 
-    height: 18px;
-    
-}
-
 h1{
-    font-size: 50px;
+    font-size: 100%;
     background: -webkit-linear-gradient(white, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 10%;
     font-size: 100%;
-}
-
-.text{
-    color:white;
 }
 
 .hidden {
@@ -107,12 +87,4 @@ h1{
 
 p{
     color: white;
-}
-
-.image{
-    width: 100px;
-}
-
-html{
-    scroll-behavior: smooth;
 }
