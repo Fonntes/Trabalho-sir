@@ -1,6 +1,8 @@
+html {
+    background: radial-gradient(ellipse at bottom, #1b2735, #090a0f 100%);
+}
+
 #title{
-    left: 0;
-    right: 0;
     color: #fff;
     font-family: Lato;
     font-weight: 300;
@@ -8,70 +10,34 @@
     padding-left: 10px
 }
 
-.scrollable-div {
-    height: 100vh; 
-    overflow-y: scroll;
-}
-
-::-webkit-scrollbar{
-    width: 0px;
-}
-
 #title span {
-    font-size:60px;
+    font-size:230%;
     background: -webkit-linear-gradient(white, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 #title .span2 {
-    font-size: 30px;
+    font-size: 130%;
     padding-left: 60px;
 
 }
 
-#text span {
-    font-size:60px;
-    background: -webkit-linear-gradient(white, #38495a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+p{
+    color: white;
 }
 
-
-#background{
-    background-color: transparent;
+.h{
+    color: white;
 }
 
-
-
-.footer{
-    background-color: red;
-}
-
-.icon {
+.icon{
     height: 100vh;
 }
 
-
-p{
-    font-size: 100%;
-    margin-left: 2%;
-    color: radial-gradient(ellipse at bottom, #1b2735, #090a0f 100%);
-    
-}
-
-h1{
-    font-size: 100%;
-    background: -webkit-linear-gradient(white, #38495a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-left: 10%;
-    font-size: 100%;
-}
-
 .hidden {
-    height: 80vh;
-    transform: translateY(10%);
+    height: 100vh;
+    transform: translateY(5%);
     opacity: 0;
     transition: all 2s ease;
 }
@@ -82,9 +48,22 @@ h1{
 }
 
 .footerZone{
-    background: black;
+    background-color: #090a0f;
 }
 
-p{
+.zone {
+    background: radial-gradient(#1b2735 40%, transparent 70%);
+}
+
+.list-unstyled a {
+    text-decoration: none;
+}
+
+.social-icons {
     color: white;
+    text-decoration: none;
+}
+
+.social-icons:hover {
+    color: gray;
 }
