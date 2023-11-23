@@ -28,7 +28,10 @@ p{
 }
 
 .h{
-    color: white;
+    font-size:230%;
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .icon{
@@ -66,4 +69,12 @@ p{
 
 .social-icons:hover {
     color: gray;
+}
+
+.direitos {
+    margin-top: -50%;
+}
+
+.footerp {
+    color: white;
 }
