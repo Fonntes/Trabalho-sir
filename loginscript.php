@@ -26,7 +26,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
     }
 
     // Consulta SQL preparada
-    $sql = "SELECT * FROM users WHERE Username = ? AND Password = ?";
+    $sql = "SELECT * FROM users WHERE username = ? AND Password = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ss", $username, $password); // 'ss' indica que são duas strings
     $stmt->execute();
@@ -38,7 +38,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
         // Usuário encontrado, verifique a senha
         $row = $result->fetch_assoc();
 
-        if ($row["Username"] === $username && $row["Password"] === $password) {
+        if ($row["username"] === $username && $row["password"] === $password) {
             header("Location: homepage.html");
             exit(); 
             
