@@ -4,7 +4,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "users";
+$dbname = "unitask";
 
 // Cria uma conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
