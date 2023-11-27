@@ -1,17 +1,24 @@
 <?php
 
-function connect_mysql(){
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "unitask";
+function pdo_connection_mysql() {
+    $DATABASE_HOST = "localhost";
+    $DATABASE_USER = "root";
+    $DATABASE_PASS = "";
+    $DATABASE_NAME = "unitask";
+    try{
+        $pdo = new PDO('mysql:host=' .
+        $DATABASE_HOST . ';dbname='
+        . $DATABASE_NAME . ';charset=utf8' ,
+        $DATABASE_USER,
+        $DATABASE_PASS);
 
-    $conn = new mysqli($servername, $username, $password, $dbname);
+        echo("connected!");
 
-    // Verifica a conexão
-    if ($conn->connect_error) {
-        die("Falha na conexão: " . $conn->connect_error);
+        return $pdo;
+    }
+    catch (PDOException $exception)
+    {
+        exit('Failed to connect to database!');
     }
 }
-
 ?>

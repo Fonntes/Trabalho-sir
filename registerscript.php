@@ -1,18 +1,7 @@
 <?php
 
-// Informações de conexão com o banco de dados
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "unitask";
-
-// Cria uma conexão
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verifica a conexão
-if ($conn->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);
-}
+require "db/connection.php";
+$pdo = pdo_connection_mysql();
 
 // Coleta os valores do formulário
 if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["username"]) && isset($_POST["password"])) {
@@ -27,13 +16,13 @@ if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["username"])
         exit();
     }
 
-    // Consulta SQL preparada
-    $sql = "INSERT INTO users VALUES (?,?,?,?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssss", $name, $email, $username, $password);
-    $result = $stmt->get_result();
-
-    var_dump($_POST);
+    // Consulta SQL preparada usando o objeto PDO $pdo
+    $sql = "INSERT INTO users (name, email, username, password) VALUES (?, ?, ?, ?)";
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindParam(1, $name);
+    $stmt->bindParam(2, $email);
+    $stmt->bindParam(3, $username);
+    $stmt->bindParam(4, $password);
 
     if ($stmt->execute()) {
         header("Location: homepage.html");
@@ -41,9 +30,8 @@ if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["username"])
     } else {
         echo "Falha no registro.";
     }
-    
-} 
-    
+}
 
-$conn->close();
+// Lembre-se de fechar a conexão quando não for mais necessária
+$pdo = null;
 ?>

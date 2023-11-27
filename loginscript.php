@@ -1,18 +1,8 @@
 <?php
 
 // Informações de conexão com o banco de dados
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "unitask";
-
-// Cria uma conexão
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verifica a conexão
-if ($conn->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);
-}
+require "db/connection.php";
+$pdo = pdo_connection_mysql();
 
 // Coleta os valores do formulário
 if (isset($_POST["username"]) && isset($_POST["password"])) {
@@ -27,17 +17,17 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
 
     // Consulta SQL preparada
     $sql = "SELECT * FROM users WHERE username = ? AND Password = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $username, $password); // 'ss' indica que são duas strings
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindParam(1, $username);
+    $stmt->bindParam(2, $password);
     $stmt->execute();
-    $result = $stmt->get_result();
+
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
     var_dump($_POST);
 
-    if ($result->num_rows > 0) {
+    if ($row) {
         // Usuário encontrado, verifique a senha
-        $row = $result->fetch_assoc();
-
         if ($row["username"] === $username && $row["password"] === $password) {
             header("Location: homepage.html");
             exit(); 
@@ -52,5 +42,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
     echo "Por favor, preencha todos os campos.";
 }
 
-$conn->close();
+// Lembre-se de fechar a conexão quando não for mais necessária
+$pdo = null;
 ?>
+
