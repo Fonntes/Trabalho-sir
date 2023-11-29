@@ -1,3 +1,12 @@
+<?php
+// Verifique se o método de requisição é POST (ou qualquer outra lógica que você precisar)
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    header("Location: login.php");
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,9 +16,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UniTask</title>
 
-    <link rel="stylesheet" href="../Styles/index.css">
-    <link rel="stylesheet" href="../Styles/background.css">
-    <script defer src="../Scripts/script.js"></script>
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="Styles/background.css">
+    <script defer src="Scripts/script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -29,16 +38,16 @@
                             <ul class="nav nav-pills nav-fill">
                                 <li class="nav-item">
                                     <div class="nav-link">
-                                        <a href="/Pages/login.html">
-                                            <button type="button" class="shadow-lg btn btn-dark">Iniciar Sessão</button>
-                                        </a>
+                                    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                                        <button type="submit" class="shadow-lg btn btn-dark">Iniciar Sessão</button>
+                                    </form>
                                     </div>
                                 </li>
                                 <li class="nav-item">
                                     <div class="nav-link">
-                                        <a href="/Pages/register.html">
-                                            <button type="button" class="shadow-lg btn btn-dark">Criar Conta</button>
-                                        </a>
+                                    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                                        <button type="button" class="shadow-lg btn btn-dark">Criar Conta</button>
+                                    </form>
                                     </div>
                                 </li>
                             </ul>
@@ -49,7 +58,7 @@
 
             <section class="container icon" id="home">
                 <div class="container text-center">
-                    <img src="../Images_landingpage/icon.png" class="img-fluid mx-auto my-1" alt="Imagem responsiva">
+                    <img src="Images_landingpage/icon.png" class="img-fluid mx-auto my-1" alt="Imagem responsiva">
                 </div>
                 <div class="container">
                     <div class="blockquote text-center">
@@ -75,7 +84,7 @@
                             <p class="text-justify">Desfrute de uma experiência personalizada ao criar sua própria conta. Com uma conta personalizada, você terá acesso a recursos exclusivos, poderá salvar suas configurações preferidas e receber recomendações personalizadas com base no seu histórico de atividades. Sua conta é a chave para desbloquear todo o potencial da nossa plataforma de gestão de tarefas.</p>
                         </div>
                         <div class="col-md-6 text-center">
-                            <img src="../Images_landingpage/criarConta.png" class="img-fluid" alt="Imagem responsiva">                            
+                            <img src="Images_landingpage/criarConta.png" class="img-fluid" alt="Imagem responsiva">                            
                         </div>
                     </div>
                 </div>
@@ -90,7 +99,7 @@
                             <p class="text-justify">Simplifique a gestão do seu fluxo de trabalho categorizando suas tarefas de forma intuitiva. Agrupe tarefas relacionadas sob categorias específicas para uma visão organizada e estruturada. A categorização facilita a identificação rápida de áreas prioritárias e ajuda na distribuição eficiente das suas responsabilidades.</p>
                         </div>
                         <div class="col-md-6 text-center">
-                            <img src="../Images_landingpage/categorias.png" class="img-fluid" alt="Imagem responsiva">                       
+                            <img src="Images_landingpage/categorias.png" class="img-fluid" alt="Imagem responsiva">                       
                         </div>
                     </div>
                 </div>
@@ -111,7 +120,7 @@
                             <p class="text-justify">Vá além das simples descrições e enriqueça suas tarefas com a capacidade de anexar documentos e ficheiros importantes. Mantenha todas as informações relevantes centralizadas, garantindo que você e sua equipe tenham acesso fácil a recursos essenciais para a conclusão bem-sucedida de cada tarefa.</p>
                         </div>
                         <div class="col-md-6 text-center">
-                                <img src="../Images_landingpage/calendario.png" class="img-fluid" alt="Imagem responsiva">
+                                <img src="Images_landingpage/calendario.png" class="img-fluid" alt="Imagem responsiva">
                         </div>
                     </div>
                 </div>
@@ -126,7 +135,7 @@
                             <p class="text-justify">Colabore de forma eficaz compartilhando tarefas com outros utilizadores. Atribua responsabilidades, promova a transparência e melhore a comunicação ao permitir que membros da equipe visualizem e contribuam para o progresso das tarefas compartilhadas. Uma gestão de tarefas verdadeiramente colaborativa.</p>
                         </div>
                         <div class="col-md-6 text-center">
-                                <img src="../Images_landingpage/compartilhar.png" class="img-fluid" alt="Imagem responsiva"> 
+                                <img src="Images_landingpage/compartilhar.png" class="img-fluid" alt="Imagem responsiva"> 
                         </div>
                     </div>
                 </div>
@@ -141,7 +150,7 @@
                             <button onclick="location.href='mailto:unitaskoficial@gmail.com'" class="shadow-lg btn btn-dark">Contacte-nos</button>
                         </div>
                         <div class="col-md-6 text-center">
-                                <img src="../Images_landingpage/aboutus.png" class="img-fluid" alt="Imagem responsiva">
+                                <img src="Images_landingpage/aboutus.png" class="img-fluid" alt="Imagem responsiva">
                         </div>
                     </div>
                 </div>
