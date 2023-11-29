@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profilestyles.css">
+    <title>Profile</title>
+</head>
+<body>
+
+    <header>
+        <h1>Unitask</h1>
+    </header>
+
+    <nav>
+        <a href="#">Ver Minhas Tarefas</a>
+        <a href="#">Ver Meu Perfil</a>
+        <a href="#">Caixa de Entrada</a>
+        <a href="#">Fazer Logout</a>
+    </nav>
+
+    <section>
+        <h2>Meu Perfil</h2>
+        <ul>
+            <li><strong>Nome:</strong> Ricardo Cerqueira Gonçalves</li>
+            <li><strong>Nome de Utilizador:</strong> rictrix</li>
+            <li><strong>E-mail:</strong> ricgoncalves@example.com</li>
+            <li><strong>Senha:</strong> ********</li>
+            <li><strong>Número de Telefone:</strong> 981235467</li>
+            <li><strong>Morada:</strong> Ponte de Lima</li>
+        </ul>
+        <button onclick="editarPerfil()">Editar Perfil</button>
+    </section>
+
+    <script>
+        function editarPerfil() {
+            // Lógica para redirecionar para a página de edição de perfil
+            window.location.href = "editar_perfil.html";
+        }
+    </script>
+
+</body>
+</html>
