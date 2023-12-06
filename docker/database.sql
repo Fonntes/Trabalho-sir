@@ -13,6 +13,11 @@ CREATE TABLE IF NOT EXISTS States (
     state VARCHAR(50) NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS Priority(
+    id_priority INT AUTO_INCREMENT PRIMARY KEY,
+    priority VARCHAR(50) NOT NULL
+);
+
 
 CREATE TABLE IF NOT EXISTS Tasks (
     id_task INT AUTO_INCREMENT PRIMARY KEY,
@@ -22,12 +27,14 @@ CREATE TABLE IF NOT EXISTS Tasks (
     creation_date DATE,
     initial_date DATE,
     finish_date DATE,
-    prioritized BOOLEAN,
     id_user_post INT,
     id_state INT,
+    id_priority INT,
     FOREIGN KEY (id_user_post) REFERENCES Users(id_user),
-    FOREIGN KEY (id_state) REFERENCES States(id_state)
+    FOREIGN KEY (id_state) REFERENCES States(id_state),
+    FOREIGN KEY (id_priority) REFERENCES Priority(id_priority)
 );
+
 
 CREATE TABLE IF NOT EXISTS Shared_Tasks (
     id_share INT AUTO_INCREMENT PRIMARY KEY,
